@@ -30,11 +30,13 @@ const data2020_nearBitcoin=data.filter(d => d.Year == "2020" & d.Energy_Source==
   
 //   var width = window.innerWidth,
 //   height = window.innerHeight;
-  const svg=d3.select("#piechart")
-  .append("svg")
-  .attr("class","col")
-    .attr("width", 600)
-    .attr("height", 450);
+var width = document.getElementById('piechart-box').clientWidth,
+height = width * 0.75;
+  const svg=d3.select("#piechart-svg")
+  // .append("svg")
+  // .attr("class","col")
+    .attr("width", width)
+    .attr("height", height);
 
 //     svg.append("g")
 //   .attr("transform", "translate(" + (width/2 - 200) + "," + 20 + ")")

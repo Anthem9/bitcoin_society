@@ -1,52 +1,73 @@
 // The svg
-var svg = d3.select("svg"),
-  width = +svg.attr("width"),
-  height = +svg.attr("height");
+const width = document.getElementById('map-box').clientWidth,
+height = width * 0.75,
+svg = d3.select("#map-svg")    
+  .attr("width", width)
+  .attr("height", height);
+
 
 // Map and projection
-var path = d3.geoPath();
-var projection = d3.geoMercator()
-  .scale(120)
+const path = d3.geoPath();
+const projection = d3.geoMercator()
+  .scale(70)
   .center([0,20])
   .translate([width / 2, height / 2]);
 
 // Data and color scale
-var data = d3.map();
-var colorScale = d3.scaleThreshold()
+const data = new Map();
+const colorScale = d3.scaleThreshold()
   .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
   .range(d3.schemeBlues[7]);
 
 // Load external data and boot
-d3.queue()
-  .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
-  .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) { data.set(d.code, +d.pop); })
-  .await(ready);
+Promise.all([
+d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
+d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) {
+    data.set(d.code, +d.pop)
+})]).then(function(loadData){
+    let topo = loadData[0]
 
-function ready(error, topo) {
+    // Define the div for the tooltip
+    var tip = d3.select("#map").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+  .style("background-color", "white")
+  .style("border", "solid")
+  .style("border-width", "2px")
+  .style("border-radius", "5px")
+  .style("padding", "5px")
 
-  let mouseOver = function(d) {
-    d3.selectAll(".Country")
-      .transition()
-      .duration(200)
-      .style("opacity", .5)
-    d3.select(this)
-      .transition()
-      .duration(200)
-      .style("opacity", 1)
-      .style("stroke", "black")
-  }
-
-  let mouseLeave = function(d) {
-    d3.selectAll(".Country")
-      .transition()
-      .duration(200)
-      .style("opacity", .8)
-    d3.select(this)
-      .transition()
-      .duration(200)
-      .style("stroke", "transparent")
-  }
-
+    let mouseOver = function(d,i) {
+      d3.selectAll(".Country")
+        .transition()
+        .duration(200)
+        .style("opacity", .5)
+      d3.select(this)
+        .transition()
+        .duration(200)
+        .style("opacity", .8)
+        .style("stroke", "black")
+      // console.log(data)
+      console.log(d)
+      // console.log(i)
+      tip.style("opacity", 1)
+        .html( "name: "+ i.properties.name +"<br/> pop " + i.total + "<br/>"+ d.clientX) 
+        .style("left", (d.pageX+35) + "px")
+        .style("top", (d.pageY) + "px");
+    }
+  
+    let mouseLeave = function(d) {
+      d3.selectAll(".Country")
+        .transition()
+        .duration(200)
+        .style("opacity", .8)
+      d3.select(this)
+        .transition()
+        .duration(200)
+        .style("stroke", "transparent")
+      // tip.style("opacity", 0)
+    }
+  
   // Draw the map
   svg.append("g")
     .selectAll("path")
@@ -67,4 +88,5 @@ function ready(error, topo) {
       .style("opacity", .8)
       .on("mouseover", mouseOver )
       .on("mouseleave", mouseLeave )
-    }
+
+})
