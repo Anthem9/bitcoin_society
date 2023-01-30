@@ -16,14 +16,19 @@ const projection = d3.geoMercator()
 // Data and color scale
 const data = new Map();
 const colorScale = d3.scaleThreshold()
-  .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
+  // .domain([1000, 100000, 1000000, 3000000, 10000000, 50000000])
+  .domain([-100 ,1, 10, 100, 1000,10000, 100000])
   .range(d3.schemeBlues[7]);
 
 // Load external data and boot
+// https://raw.githubusercontent.com/Anthem9/bitcoin_society/main/data/emissions.csv
 Promise.all([
 d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) {
-    data.set(d.code, +d.pop)
+// d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) {
+//     data.set(d.code, +d.pop)
+d3.csv("https://raw.githubusercontent.com/Anthem9/bitcoin_society/main/data/emissions.csv", function(d) {
+  data.set(d.code, +d.d2019)
+  
 })]).then(function(loadData){
     let topo = loadData[0]
 
@@ -53,10 +58,10 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
         .style("stroke", "black")
       // console.log(data)
       console.log(d)
-      // console.log(i)
+      console.log(i)
       // console.log(d3.pointer(d))
       tip.style("opacity", 1)
-        .html( "name: "+ i.properties.name +"<br/> pop " + i.total + "<br/>"+ d.clientX) 
+        .html( "Country name: "+ i.properties.name +"<br/> CO2 emission : " + i.total + "<br/>") 
         .style("left", (d3.pointer(d)[0] + "px"))
         .style("top", (d3.pointer(d)[1]+200 + "px"))
     }
@@ -70,7 +75,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
         .transition()
         .duration(200)
         .style("stroke", "transparent")
-      // tip.style("opacity", 0)
+      tip.style("opacity", 0)
     }
   
   // Draw the map
