@@ -30,7 +30,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
     // Define the div for the tooltip
     var tip = d3.select("#map").append("div")
     .attr("class", "tooltip")
-    .style("trigger", "item")
+    .style('position', 'absolute')
+		.style('z-index', '25')
     .style("opacity", 0)
   .style("background-color", "white")
   .style("border", "solid")
@@ -56,8 +57,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/wo
       // console.log(d3.pointer(d))
       tip.style("opacity", 1)
         .html( "name: "+ i.properties.name +"<br/> pop " + i.total + "<br/>"+ d.clientX) 
-        .style("left", (d3.pointer(d)[0]+35 + "px"))
-        .style("top", (d3.pointer(d)[1] + "px"))
+        .style("left", (d3.pointer(d)[0] + "px"))
+        .style("top", (d3.pointer(d)[1]+200 + "px"))
     }
   
     let mouseLeave = function(d) {
