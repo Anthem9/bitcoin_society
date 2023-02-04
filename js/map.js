@@ -19,37 +19,7 @@ const colorScale = d3.scaleThreshold()
   .domain([-100 ,1, 10, 100, 1000,10000, 100000])
   .range(d3.schemeBlues[7]);
 
-  let mouseOver = function(d,i) {
-    d3.selectAll(".Country")
-      .transition()
-      .duration(200)
-      .style("opacity", .5)
-    d3.select(this)
-      .transition()
-      .duration(200)
-      .style("opacity", .8)
-      .style("stroke", "black")
-    // console.log(data)
-    console.log(d)
-    console.log(i)
-    // console.log(d3.pointer(d))
-    tip.style("opacity", 1)
-      .html( "Country name: "+ i.properties.name +"<br/> CO2 emission : " + i.total + " Mt"+"<br/>") 
-      .style("left", (d3.pointer(d)[0] + "px"))
-      .style("top", (d3.pointer(d)[1] + "px"))
-  }
 
-  let mouseLeave = function(d) {
-    d3.selectAll(".Country")
-      .transition()
-      .duration(200)
-      .style("opacity", .8)
-    d3.select(this)
-      .transition()
-      .duration(200)
-      .style("stroke", "transparent")
-    tip.style("opacity", 0)
-  }
 
 
 const selected_year=d3.select('input[name="optionsRadiosinline"]:checked').property("value");
@@ -85,6 +55,37 @@ if (selected_year==2014){data.set(d.code, +d.d2014);};
   .style("border-radius", "5px")
   .style("padding", "5px")
   
+  let mouseOver = function(d,i) {
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .5)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("opacity", .8)
+      .style("stroke", "black")
+    // console.log(data)
+    console.log(d)
+    console.log(i)
+    // console.log(d3.pointer(d))
+    tip.style("opacity", 1)
+      .html( "Country name: "+ i.properties.name +"<br/> CO2 emission : " + i.total + " Mt"+"<br/>") 
+      .style("left", (d3.pointer(d)[0] + "px"))
+      .style("top", (d3.pointer(d)[1] + "px"))
+  }
+
+  let mouseLeave = function(d) {
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .8)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("stroke", "transparent")
+    tip.style("opacity", 0)
+  }
   
   // Draw the map
   svg.append("g")
@@ -148,7 +149,37 @@ if (selected_year==2014){data.set(d.code, +d.d2014);};
   .style("border-radius", "5px")
   .style("padding", "5px")
   
-  
+  let mouseOver = function(d,i) {
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .5)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("opacity", .8)
+      .style("stroke", "black")
+    // console.log(data)
+    console.log(d)
+    console.log(i)
+    // console.log(d3.pointer(d))
+    tip.style("opacity", 1)
+      .html( "Country name: "+ i.properties.name +"<br/> CO2 emission : " + i.total + " Mt"+"<br/>") 
+      .style("left", (d3.pointer(d)[0] + "px"))
+      .style("top", (d3.pointer(d)[1] + "px"))
+  }
+
+  let mouseLeave = function(d) {
+    d3.selectAll(".Country")
+      .transition()
+      .duration(200)
+      .style("opacity", .8)
+    d3.select(this)
+      .transition()
+      .duration(200)
+      .style("stroke", "transparent")
+    tip.style("opacity", 0)
+  }
   // Draw the map
   svg.append("g")
     .selectAll("path")
