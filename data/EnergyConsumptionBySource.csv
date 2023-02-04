@@ -21,7 +21,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,total,Bangladesh,79.600877
 2019,total,Belarus,37.7155
 2019,total,Belgium,89.9314609
-2019,total,Bosnia and Herzegovina,16.65445
+2019,total,BosniaandHerzegovina,16.65445
 2019,total,Brazil,601.4435827
 2019,total,Bulgaria,38.9149512
 2019,total,Canada,627.8128689
@@ -30,9 +30,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,total,Colombia,78.1495599
 2019,total,Croatia,12.2922931
 2019,total,Cuba,19.52646
-2019,total,Czech Republic,79.1107549
+2019,total,CzechRepublic,79.1107549
 2019,total,Denmark,29.8828185
-2019,total,Dominican Republic,18.90698
+2019,total,DominicanRepublic,18.90698
 2019,total,Ecuador,32.47643
 2019,total,Egypt,182.98812
 2019,total,Estonia,6.8665502
@@ -40,7 +40,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,total,France,544.3273038
 2019,total,Germany,578.1760987
 2019,total,Greece,45.7982992
-2019,total,Hong Kong,34.712
+2019,total,HongKong,34.712
 2019,total,Hungary,32.5659378
 2019,total,Iceland,19.119793
 2019,total,India,1536.611495
@@ -62,9 +62,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,total,Morocco,37.077883
 2019,total,Mozambique,17.9871
 2019,total,Netherlands,119.0127664
-2019,total,New Zealand,43.86866993
+2019,total,NewZealand,43.86866993
 2019,total,Nigeria,29.32448
-2019,total,North Korea,16.07632
+2019,total,NorthKorea,16.07632
 2019,total,Norway,131.9557672
 2019,total,Oman,36.03702
 2019,total,Pakistan,120.39552
@@ -73,19 +73,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,total,Philippines,100.92099
 2019,total,Poland,149.1705333
 2019,total,Portugal,50.6305724
-2019,total,Puerto Rico,17.70314
+2019,total,PuertoRico,17.70314
 2019,total,Qatar,46.888984
 2019,total,Romania,54.857559
 2019,total,Russia,1060.40342
-2019,total,Saudi Arabia,362.4365
+2019,total,SaudiArabia,362.4365
 2019,total,Serbia,33.5809988
 2019,total,Singapore,51.31338
 2019,total,Slovakia,26.2784132
 2019,total,Slovenia,14.9967828
-2019,total,South Africa,231.50374
-2019,total,South Korea,555.5580353
+2019,total,SouthAfrica,231.50374
+2019,total,SouthKorea,555.5580353
 2019,total,Spain,261.8728532
-2019,total,Sri Lanka,15.32842
+2019,total,SriLanka,15.32842
 2019,total,Sweden,165.646854
 2019,total,Switzerland,65.2865348
 2019,total,Syria,17.10508
@@ -96,9 +96,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,total,Turkey,296.9360804
 2019,total,Turkmenistan,21.1823
 2019,total,Ukraine,143.83374
-2019,total,United Arab Emirates,129.409
-2019,total,United Kingdom,313.5442484
-2019,total,United States,4162.812661
+2019,total,UnitedArabEmirates,129.409
+2019,total,UK,313.5442484
+2019,total,US,4162.812661
 2019,total,Uruguay,15.80266
 2019,total,Uzbekistan,60.151687
 2019,total,Venezuela,105.40402
@@ -114,7 +114,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,nuclear,Bangladesh,0
 2019,nuclear,Belarus,0
 2019,nuclear,Belgium,41.3056
-2019,nuclear,Bosnia and Herzegovina,0
+2019,nuclear,BosniaandHerzegovina,0
 2019,nuclear,Brazil,15.1610946
 2019,nuclear,Bulgaria,15.7124461
 2019,nuclear,Canada,95.4690001
@@ -123,9 +123,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,nuclear,Colombia,0
 2019,nuclear,Croatia,0
 2019,nuclear,Cuba,0
-2019,nuclear,Czech Republic,28.5793509
+2019,nuclear,CzechRepublic,28.5793509
 2019,nuclear,Denmark,0
-2019,nuclear,Dominican Republic,0
+2019,nuclear,DominicanRepublic,0
 2019,nuclear,Ecuador,0
 2019,nuclear,Egypt,0
 2019,nuclear,Estonia,0
@@ -133,7 +133,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,nuclear,France,379.4640001
 2019,nuclear,Germany,70.9920001
 2019,nuclear,Greece,0
-2019,nuclear,Hong Kong,0
+2019,nuclear,HongKong,0
 2019,nuclear,Hungary,15.402
 2019,nuclear,Iceland,0
 2019,nuclear,India,42.4494011
@@ -155,9 +155,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,nuclear,Morocco,0
 2019,nuclear,Mozambique,0
 2019,nuclear,Netherlands,3.700299
-2019,nuclear,New Zealand,0
+2019,nuclear,NewZealand,0
 2019,nuclear,Nigeria,0
-2019,nuclear,North Korea,0
+2019,nuclear,NorthKorea,0
 2019,nuclear,Norway,0
 2019,nuclear,Oman,0
 2019,nuclear,Pakistan,9.066
@@ -166,19 +166,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,nuclear,Philippines,0
 2019,nuclear,Poland,0
 2019,nuclear,Portugal,0
-2019,nuclear,Puerto Rico,0
+2019,nuclear,PuertoRico,0
 2019,nuclear,Qatar,0
 2019,nuclear,Romania,10.3454399
 2019,nuclear,Russia,195.535
-2019,nuclear,Saudi Arabia,0
+2019,nuclear,SaudiArabia,0
 2019,nuclear,Serbia,0
 2019,nuclear,Singapore,0
 2019,nuclear,Slovakia,14.168
 2019,nuclear,Slovenia,5.5329814
-2019,nuclear,South Africa,13.603
-2019,nuclear,South Korea,138.6792038
+2019,nuclear,SouthAfrica,13.603
+2019,nuclear,SouthKorea,138.6792038
 2019,nuclear,Spain,55.8239999
-2019,nuclear,Sri Lanka,0
+2019,nuclear,SriLanka,0
 2019,nuclear,Sweden,64.3339999
 2019,nuclear,Switzerland,25.28
 2019,nuclear,Syria,0
@@ -189,9 +189,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,nuclear,Turkey,0
 2019,nuclear,Turkmenistan,0
 2019,nuclear,Ukraine,78.144
-2019,nuclear,United Arab Emirates,0
-2019,nuclear,United Kingdom,51.0320901
-2019,nuclear,United States,809.409262
+2019,nuclear,UnitedArabEmirates,0
+2019,nuclear,UK,51.0320901
+2019,nuclear,US,809.409262
 2019,nuclear,Uruguay,0
 2019,nuclear,Uzbekistan,0
 2019,nuclear,Venezuela,0
@@ -207,7 +207,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,fossil_fuels,Bangladesh,78.402
 2019,fossil_fuels,Belarus,36.67598
 2019,fossil_fuels,Belgium,28.2885609
-2019,fossil_fuels,Bosnia and Herzegovina,10.36726
+2019,fossil_fuels,BosniaandHerzegovina,10.36726
 2019,fossil_fuels,Brazil,88.6869093
 2019,fossil_fuels,Bulgaria,16.9335501
 2019,fossil_fuels,Canada,109.0238685
@@ -216,9 +216,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,fossil_fuels,Colombia,23.4070763
 2019,fossil_fuels,Croatia,3.9686133
 2019,fossil_fuels,Cuba,18.62046
-2019,fossil_fuels,Czech Republic,40.7853319
+2019,fossil_fuels,CzechRepublic,40.7853319
 2019,fossil_fuels,Denmark,6.0104994
-2019,fossil_fuels,Dominican Republic,16.84198
+2019,fossil_fuels,DominicanRepublic,16.84198
 2019,fossil_fuels,Ecuador,7.47908
 2019,fossil_fuels,Egypt,165.43812
 2019,fossil_fuels,Estonia,4.6600503
@@ -226,7 +226,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,fossil_fuels,France,50.4751223
 2019,fossil_fuels,Germany,264.1422421
 2019,fossil_fuels,Greece,29.4856253
-2019,fossil_fuels,Hong Kong,34.587
+2019,fossil_fuels,HongKong,34.587
 2019,fossil_fuels,Hungary,12.1649381
 2019,fossil_fuels,Iceland,0.002661
 2019,fossil_fuels,India,1180.970059
@@ -248,9 +248,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,fossil_fuels,Morocco,30.46916
 2019,fossil_fuels,Mozambique,3.6801
 2019,fossil_fuels,Netherlands,90.7339033
-2019,fossil_fuels,New Zealand,7.539387021
+2019,fossil_fuels,NewZealand,7.539387021
 2019,fossil_fuels,Nigeria,23.15502
-2019,fossil_fuels,North Korea,2.40922
+2019,fossil_fuels,NorthKorea,2.40922
 2019,fossil_fuels,Norway,2.6930583
 2019,fossil_fuels,Oman,36.03302
 2019,fossil_fuels,Pakistan,70.69552
@@ -259,19 +259,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,fossil_fuels,Philippines,78.95624
 2019,fossil_fuels,Poland,124.3702605
 2019,fossil_fuels,Portugal,23.6342803
-2019,fossil_fuels,Puerto Rico,16.8
+2019,fossil_fuels,PuertoRico,16.8
 2019,fossil_fuels,Qatar,46.88062
 2019,fossil_fuels,Romania,20.0745332
 2019,fossil_fuels,Russia,668.43118
-2019,fossil_fuels,Saudi Arabia,361.9987
+2019,fossil_fuels,SaudiArabia,361.9987
 2019,fossil_fuels,Serbia,23.4240657
 2019,fossil_fuels,Singapore,49.46938
 2019,fossil_fuels,Slovakia,5.5885832
 2019,fossil_fuels,Slovenia,4.5345996
-2019,fossil_fuels,South Africa,208.41774
-2019,fossil_fuels,South Korea,387.5087252
+2019,fossil_fuels,SouthAfrica,208.41774
+2019,fossil_fuels,SouthKorea,387.5087252
 2019,fossil_fuels,Spain,107.2766033
-2019,fossil_fuels,Sri Lanka,10.23942
+2019,fossil_fuels,SriLanka,10.23942
 2019,fossil_fuels,Sweden,1.6250239
 2019,fossil_fuels,Switzerland,0.604944
 2019,fossil_fuels,Syria,15.82208
@@ -282,9 +282,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,fossil_fuels,Turkey,166.1924564
 2019,fossil_fuels,Turkmenistan,21.182
 2019,fossil_fuels,Ukraine,54.30944
-2019,fossil_fuels,United Arab Emirates,125.852
-2019,fossil_fuels,United Kingdom,138.9076502
-2019,fossil_fuels,United States,2581.702822
+2019,fossil_fuels,UnitedArabEmirates,125.852
+2019,fossil_fuels,UK,138.9076502
+2019,fossil_fuels,US,2581.702822
 2019,fossil_fuels,Uruguay,0.27166
 2019,fossil_fuels,Uzbekistan,53.64486
 2019,fossil_fuels,Venezuela,33.30702
@@ -300,7 +300,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,renewable,Bangladesh,1.198877
 2019,renewable,Belarus,1.03952
 2019,renewable,Belgium,20.6203
-2019,renewable,Bosnia and Herzegovina,6.31219
+2019,renewable,BosniaandHerzegovina,6.31219
 2019,renewable,Brazil,497.5955788
 2019,renewable,Bulgaria,6.465955
 2019,renewable,Canada,423.4190003
@@ -309,9 +309,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,renewable,Colombia,54.7424836
 2019,renewable,Croatia,8.3686798
 2019,renewable,Cuba,0.906
-2019,renewable,Czech Republic,10.0870721
+2019,renewable,CzechRepublic,10.0870721
 2019,renewable,Denmark,23.8723191
-2019,renewable,Dominican Republic,2.065
+2019,renewable,DominicanRepublic,2.065
 2019,renewable,Ecuador,24.99735
 2019,renewable,Egypt,17.55
 2019,renewable,Estonia,2.2064999
@@ -319,7 +319,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,renewable,France,116.1261814
 2019,renewable,Germany,245.3919996
 2019,renewable,Greece,16.3346568
-2019,renewable,Hong Kong,0.125
+2019,renewable,HongKong,0.125
 2019,renewable,Hungary,4.9989997
 2019,renewable,Iceland,19.117132
 2019,renewable,India,313.1920344
@@ -341,9 +341,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,renewable,Morocco,6.744723
 2019,renewable,Mozambique,14.307
 2019,renewable,Netherlands,24.5785641
-2019,renewable,New Zealand,36.32928291
+2019,renewable,NewZealand,36.32928291
 2019,renewable,Nigeria,6.16946
-2019,renewable,North Korea,13.6671
+2019,renewable,NorthKorea,13.6671
 2019,renewable,Norway,129.640709
 2019,renewable,Oman,0.004
 2019,renewable,Pakistan,40.634
@@ -352,19 +352,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,renewable,Philippines,21.96475
 2019,renewable,Poland,25.126435
 2019,renewable,Portugal,27.3978569
-2019,renewable,Puerto Rico,0.90314
+2019,renewable,PuertoRico,0.90314
 2019,renewable,Qatar,0.008364
 2019,renewable,Romania,24.5655859
 2019,renewable,Russia,197.15424
-2019,renewable,Saudi Arabia,0.4378
+2019,renewable,SaudiArabia,0.4378
 2019,renewable,Serbia,10.5129331
 2019,renewable,Singapore,1.844
 2019,renewable,Slovakia,6.62283
 2019,renewable,Slovenia,4.9978298
-2019,renewable,South Africa,11.052
-2019,renewable,South Korea,30.4993402
+2019,renewable,SouthAfrica,11.052
+2019,renewable,SouthKorea,30.4993402
 2019,renewable,Spain,99.56925
-2019,renewable,Sri Lanka,5.089
+2019,renewable,SriLanka,5.089
 2019,renewable,Sweden,99.6978302
 2019,renewable,Switzerland,40.6125598
 2019,renewable,Syria,1.283
@@ -375,9 +375,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2019,renewable,Turkey,130.743624
 2019,renewable,Turkmenistan,3.00E-04
 2019,renewable,Ukraine,11.8683
-2019,renewable,United Arab Emirates,3.557
-2019,renewable,United Kingdom,124.208547
-2019,renewable,United States,776.961321
+2019,renewable,UnitedArabEmirates,3.557
+2019,renewable,UK,124.208547
+2019,renewable,US,776.961321
 2019,renewable,Uruguay,15.531
 2019,renewable,Uzbekistan,6.506827
 2019,renewable,Venezuela,72.097
@@ -393,7 +393,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,total,Bangladesh,75.47871973
 2020,total,Belarus,36.0619
 2020,total,Belgium,85.701887
-2020,total,Bosnia and Herzegovina,15.69052
+2020,total,BosniaandHerzegovina,15.69052
 2020,total,Brazil,603.1553
 2020,total,Bulgaria,35.7841652
 2020,total,Canada,623.9858667
@@ -402,9 +402,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,total,Colombia,75.7309512
 2020,total,Croatia,12.8324588
 2020,total,Cuba,18.51044841
-2020,total,Czech Republic,73.9507328
+2020,total,CzechRepublic,73.9507328
 2020,total,Denmark,28.9196916
-2020,total,Dominican Republic,17.12284644
+2020,total,DominicanRepublic,17.12284644
 2020,total,Ecuador,32.13185
 2020,total,Egypt,157.97
 2020,total,Estonia,5.8752408
@@ -412,7 +412,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,total,France,506.4986227
 2020,total,Germany,545.5231373
 2020,total,Greece,43.0839083
-2020,total,Hong Kong,33.1059
+2020,total,HongKong,33.1059
 2020,total,Hungary,33.3204209
 2020,total,Iceland,18.778694
 2020,total,India,1506.447594
@@ -434,9 +434,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,total,Morocco,35.36462039
 2020,total,Mozambique,17.80412088
 2020,total,Netherlands,120.0576141
-2020,total,New Zealand,43.24423618
+2020,total,NewZealand,43.24423618
 2020,total,Nigeria,28.15430793
-2020,total,North Korea,14.50456662
+2020,total,NorthKorea,14.50456662
 2020,total,Norway,153.9079342
 2020,total,Oman,34.21603977
 2020,total,Pakistan,117.082
@@ -445,19 +445,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,total,Philippines,97.46
 2020,total,Poland,144.4291258
 2020,total,Portugal,50.7589174
-2020,total,Puerto Rico,17.59771
+2020,total,PuertoRico,17.59771
 2020,total,Qatar,44.51980478
 2020,total,Romania,51.6451741
 2020,total,Russia,1026.65506
-2020,total,Saudi Arabia,344.2093776
+2020,total,SaudiArabia,344.2093776
 2020,total,Serbia,34.3450182
 2020,total,Singapore,50.31612
 2020,total,Slovakia,26.5198628
 2020,total,Slovenia,15.9986798
-2020,total,South Africa,218.232991
-2020,total,South Korea,553.8690845
+2020,total,SouthAfrica,218.232991
+2020,total,SouthKorea,553.8690845
 2020,total,Spain,251.1610323
-2020,total,Sri Lanka,15.19995626
+2020,total,SriLanka,15.19995626
 2020,total,Sweden,158.8517017
 2020,total,Switzerland,66.0905137
 2020,total,Syria,15.80548854
@@ -468,9 +468,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,total,Turkey,324.8134043
 2020,total,Turkmenistan,20.11153732
 2020,total,Ukraine,138.97782
-2020,total,United Arab Emirates,124.8408891
-2020,total,United Kingdom,303.4642607
-2020,total,United States,4048.657847
+2020,total,UnitedArabEmirates,124.8408891
+2020,total,UK,303.4642607
+2020,total,US,4048.657847
 2020,total,Uruguay,12.89493127
 2020,total,Uzbekistan,57.84066723
 2020,total,Venezuela,103.7218021
@@ -486,7 +486,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,nuclear,Bangladesh,0
 2020,nuclear,Belarus,0.338
 2020,nuclear,Belgium,32.6058
-2020,nuclear,Bosnia and Herzegovina,0
+2020,nuclear,BosniaandHerzegovina,0
 2020,nuclear,Brazil,13.2094422
 2020,nuclear,Bulgaria,15.7872682
 2020,nuclear,Canada,92.6516066
@@ -495,9 +495,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,nuclear,Colombia,0
 2020,nuclear,Croatia,0
 2020,nuclear,Cuba,0
-2020,nuclear,Czech Republic,28.369685
+2020,nuclear,CzechRepublic,28.369685
 2020,nuclear,Denmark,0
-2020,nuclear,Dominican Republic,0
+2020,nuclear,DominicanRepublic,0
 2020,nuclear,Ecuador,0
 2020,nuclear,Egypt,0
 2020,nuclear,Estonia,0
@@ -505,7 +505,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,nuclear,France,335.4142381
 2020,nuclear,Germany,60.9139999
 2020,nuclear,Greece,0
-2020,nuclear,Hong Kong,0
+2020,nuclear,HongKong,0
 2020,nuclear,Hungary,15.172
 2020,nuclear,Iceland,0
 2020,nuclear,India,42.0632123
@@ -527,9 +527,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,nuclear,Morocco,0
 2020,nuclear,Mozambique,0
 2020,nuclear,Netherlands,3.864924
-2020,nuclear,New Zealand,0
+2020,nuclear,NewZealand,0
 2020,nuclear,Nigeria,0
-2020,nuclear,North Korea,0
+2020,nuclear,NorthKorea,0
 2020,nuclear,Norway,0
 2020,nuclear,Oman,0
 2020,nuclear,Pakistan,9.64
@@ -538,19 +538,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,nuclear,Philippines,0
 2020,nuclear,Poland,0
 2020,nuclear,Portugal,0
-2020,nuclear,Puerto Rico,0
+2020,nuclear,PuertoRico,0
 2020,nuclear,Qatar,0
 2020,nuclear,Romania,10.5567029
 2020,nuclear,Russia,215.745
-2020,nuclear,Saudi Arabia,0
+2020,nuclear,SaudiArabia,0
 2020,nuclear,Serbia,0
 2020,nuclear,Singapore,0
 2020,nuclear,Slovakia,14.2810001
 2020,nuclear,Slovenia,6.0408459
-2020,nuclear,South Africa,11.616
-2020,nuclear,South Korea,152.583936
+2020,nuclear,SouthAfrica,11.616
+2020,nuclear,SouthKorea,152.583936
 2020,nuclear,Spain,55.7570001
-2020,nuclear,Sri Lanka,0
+2020,nuclear,SriLanka,0
 2020,nuclear,Sweden,47.2626974
 2020,nuclear,Switzerland,22.9900001
 2020,nuclear,Syria,0
@@ -561,9 +561,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,nuclear,Turkey,0
 2020,nuclear,Turkmenistan,0
 2020,nuclear,Ukraine,76.202
-2020,nuclear,United Arab Emirates,1.562
-2020,nuclear,United Kingdom,45.6680299
-2020,nuclear,United States,789.878863
+2020,nuclear,UnitedArabEmirates,1.562
+2020,nuclear,UK,45.6680299
+2020,nuclear,US,789.878863
 2020,nuclear,Uruguay,0
 2020,nuclear,Uzbekistan,0
 2020,nuclear,Venezuela,0
@@ -579,7 +579,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,fossil_fuels,Bangladesh,74.43984273
 2020,fossil_fuels,Belarus,34.5309
 2020,fossil_fuels,Belgium,28.9475459
-2020,fossil_fuels,Bosnia and Herzegovina,10.81752
+2020,fossil_fuels,BosniaandHerzegovina,10.81752
 2020,fossil_fuels,Brazil,78.9670078
 2020,fossil_fuels,Bulgaria,13.7215124
 2020,fossil_fuels,Canada,100.3356311
@@ -588,9 +588,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,fossil_fuels,Colombia,26.3560402
 2020,fossil_fuels,Croatia,4.3376589
 2020,fossil_fuels,Cuba,17.67944841
-2020,fossil_fuels,Czech Republic,35.5644289
+2020,fossil_fuels,CzechRepublic,35.5644289
 2020,fossil_fuels,Denmark,4.8797108
-2020,fossil_fuels,Dominican Republic,15.99084644
+2020,fossil_fuels,DominicanRepublic,15.99084644
 2020,fossil_fuels,Ecuador,6.75585
 2020,fossil_fuels,Egypt,140.08
 2020,fossil_fuels,Estonia,3.3329721
@@ -598,7 +598,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,fossil_fuels,France,45.4579358
 2020,fossil_fuels,Germany,232.8862875
 2020,fossil_fuels,Greece,25.0872158
-2020,fossil_fuels,Hong Kong,32.9799
+2020,fossil_fuels,HongKong,32.9799
 2020,fossil_fuels,Hungary,12.281421
 2020,fossil_fuels,Iceland,0.0030668
 2020,fossil_fuels,India,1137.180433
@@ -620,9 +620,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,fossil_fuels,Morocco,28.92935739
 2020,fossil_fuels,Mozambique,3.49412088
 2020,fossil_fuels,Netherlands,82.4153048
-2020,fossil_fuels,New Zealand,8.110432123
+2020,fossil_fuels,NewZealand,8.110432123
 2020,fossil_fuels,Nigeria,21.98484793
-2020,fossil_fuels,North Korea,2.287466619
+2020,fossil_fuels,NorthKorea,2.287466619
 2020,fossil_fuels,Norway,2.138668
 2020,fossil_fuels,Oman,34.21203977
 2020,fossil_fuels,Pakistan,64.662
@@ -631,19 +631,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,fossil_fuels,Philippines,75.629
 2020,fossil_fuels,Poland,116.5150676
 2020,fossil_fuels,Portugal,20.9524256
-2020,fossil_fuels,Puerto Rico,16.688
+2020,fossil_fuels,PuertoRico,16.688
 2020,fossil_fuels,Qatar,44.51144078
 2020,fossil_fuels,Romania,16.7553033
 2020,fossil_fuels,Russia,609.96506
-2020,fossil_fuels,Saudi Arabia,343.7045776
+2020,fossil_fuels,SaudiArabia,343.7045776
 2020,fossil_fuels,Serbia,24.4386313
 2020,fossil_fuels,Singapore,48.54912
 2020,fossil_fuels,Slovakia,5.5548627
 2020,fossil_fuels,Slovenia,4.4686304
-2020,fossil_fuels,South Africa,197.57296
-2020,fossil_fuels,South Korea,364.2636725
+2020,fossil_fuels,SouthAfrica,197.57296
+2020,fossil_fuels,SouthKorea,364.2636725
 2020,fossil_fuels,Spain,84.2270325
-2020,fossil_fuels,Sri Lanka,9.721956257
+2020,fossil_fuels,SriLanka,9.721956257
 2020,fossil_fuels,Sweden,0.7047315
 2020,fossil_fuels,Switzerland,0.6072445
 2020,fossil_fuels,Syria,15.02248854
@@ -654,9 +654,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,fossil_fuels,Turkey,200.7281454
 2020,fossil_fuels,Turkmenistan,20.11153732
 2020,fossil_fuels,Ukraine,51.26102
-2020,fossil_fuels,United Arab Emirates,119.4918891
-2020,fossil_fuels,United Kingdom,118.0243245
-2020,fossil_fuels,United States,2426.719259
+2020,fossil_fuels,UnitedArabEmirates,119.4918891
+2020,fossil_fuels,UK,118.0243245
+2020,fossil_fuels,US,2426.719259
 2020,fossil_fuels,Uruguay,0.2579312731
 2020,fossil_fuels,Uzbekistan,50.93384023
 2020,fossil_fuels,Venezuela,31.62380208
@@ -672,7 +672,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,renewable,Bangladesh,1.038877
 2020,renewable,Belarus,1.193
 2020,renewable,Belgium,24.4967003
-2020,renewable,Bosnia and Herzegovina,4.898
+2020,renewable,BosniaandHerzegovina,4.898
 2020,renewable,Brazil,510.97885
 2020,renewable,Bulgaria,6.4753846
 2020,renewable,Canada,431.099947
@@ -681,9 +681,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,renewable,Colombia,49.374911
 2020,renewable,Croatia,8.5347999
 2020,renewable,Cuba,0.831
-2020,renewable,Czech Republic,10.4083129
+2020,renewable,CzechRepublic,10.4083129
 2020,renewable,Denmark,24.0399808
-2020,renewable,Dominican Republic,1.132
+2020,renewable,DominicanRepublic,1.132
 2020,renewable,Ecuador,25.376
 2020,renewable,Egypt,17.89
 2020,renewable,Estonia,2.5422687
@@ -691,7 +691,7 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,renewable,France,127.3182018
 2020,renewable,Germany,254.1450002
 2020,renewable,Greece,18.0794332
-2020,renewable,Hong Kong,0.126
+2020,renewable,HongKong,0.126
 2020,renewable,Hungary,5.8669999
 2020,renewable,Iceland,18.7756272
 2020,renewable,India,327.2039483
@@ -713,9 +713,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,renewable,Morocco,6.535263
 2020,renewable,Mozambique,14.31
 2020,renewable,Netherlands,33.7773853
-2020,renewable,New Zealand,35.13380406
+2020,renewable,NewZealand,35.13380406
 2020,renewable,Nigeria,6.16946
-2020,renewable,North Korea,12.2171
+2020,renewable,NorthKorea,12.2171
 2020,renewable,Norway,152.0547862
 2020,renewable,Oman,0.004
 2020,renewable,Pakistan,42.78
@@ -724,19 +724,19 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,renewable,Philippines,21.831
 2020,renewable,Poland,28.276422
 2020,renewable,Portugal,30.2438732
-2020,renewable,Puerto Rico,0.90971
+2020,renewable,PuertoRico,0.90971
 2020,renewable,Qatar,0.008364
 2020,renewable,Romania,24.4331679
 2020,renewable,Russia,201.558
-2020,renewable,Saudi Arabia,0.5048
+2020,renewable,SaudiArabia,0.5048
 2020,renewable,Serbia,10.2063869
 2020,renewable,Singapore,1.767
 2020,renewable,Slovakia,6.789
 2020,renewable,Slovenia,5.5894282
-2020,renewable,South Africa,10.675031
-2020,renewable,South Korea,38.101467
+2020,renewable,SouthAfrica,10.675031
+2020,renewable,SouthKorea,38.101467
 2020,renewable,Spain,112.3059998
-2020,renewable,Sri Lanka,5.478
+2020,renewable,SriLanka,5.478
 2020,renewable,Sweden,110.8983997
 2020,renewable,Switzerland,43.7997561
 2020,renewable,Syria,0.783
@@ -747,9 +747,9 @@ Year,Energy_Source,Country,Consumption_TWh
 2020,renewable,Turkey,124.0852589
 2020,renewable,Turkmenistan,0
 2020,renewable,Ukraine,11.5148
-2020,renewable,United Arab Emirates,3.787
-2020,renewable,United Kingdom,140.2410272
-2020,renewable,United States,837.3809303
+2020,renewable,UnitedArabEmirates,3.787
+2020,renewable,UK,140.2410272
+2020,renewable,US,837.3809303
 2020,renewable,Uruguay,12.637
 2020,renewable,Uzbekistan,6.906827
 2020,renewable,Venezuela,72.098

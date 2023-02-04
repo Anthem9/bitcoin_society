@@ -20,7 +20,7 @@ const createPieChart = (dataElec,dataCO2,lowbound,upbound) => {
   //initialization
   const windowWidth = window.innerWidth/1.1, windowHeight = window.innerHeight/1.2;
   const Energy_Source_list = ["nuclear", "fossil_fuels", "renewable"];
-  const color_list = ["rgba(233,233,12,0.6)","rgba(33,23,122,0.5)","rgba(175,238,238,0.6)"] //175,238,238  33,23,122
+  const color_list = ["rgba(233,233,12,0.6)","rgba(33,23,122,0.3)","rgba(175,238,238,0.6)"] //175,238,238  33,23,122
   const value_range=15;
   const outRadius_Bitcoin_Elec=10*Math.log(dataElec.filter(d => d.Year == "2019" & d.Country == "Bitcoin" & d.Energy_Source=='total').map(d => d.Consumption_TWh/1.5)[0]);
   const outRadius_Bitcoin_CO2=7*Math.log(dataCO2.filter(d => d.Country == "Bitcoin" ).map(d => d.Year2019)[0]);
@@ -35,23 +35,6 @@ const createPieChart = (dataElec,dataCO2,lowbound,upbound) => {
   const dataElec2019 = dataElec.filter(d => d.Year == "2019" & d.Energy_Source!='total');
   const dataElec2019_bitcoin=dataElec.filter(d => d.Year == "2019" & d.Energy_Source!='total' & d.Country=="Bitcoin");
   const dataElec2019_bitcoinConsumption=dataElec.filter(d => d.Year == "2019" & d.Energy_Source=='total' & d.Country=="Bitcoin").map(d=>d.Consumption_TWh);
-  if (upbound==""){
-    dataElec2019_nearBitcoin=
-  dataElec.filter(d => d.Year == "2019" & d.Country!="Bitcoin" & d.Energy_Source=='total' 
-  & (
-  (d.Consumption_TWh>(dataElec2019_bitcoinConsumption[0]*parseFloat(lowbound)))
-  ))
-  }
-  
-  if (lowbound==""){
-    dataElec2019_nearBitcoin=
-  dataElec.filter(d => d.Year == "2019" & d.Country!="Bitcoin" & d.Energy_Source=='total' 
-  & (
-  (d.Consumption_TWh<(dataElec2019_bitcoinConsumption[0]*parseFloat(upbound))) 
-  ))
-  }
-
-  if (upbound!="" & lowbound!=""){
   if(upbound>lowbound){
   dataElec2019_nearBitcoin=
   dataElec.filter(d => d.Year == "2019" & d.Country!="Bitcoin" & d.Energy_Source=='total' 
@@ -65,7 +48,7 @@ const createPieChart = (dataElec,dataCO2,lowbound,upbound) => {
   & (
   (d.Consumption_TWh<(dataElec2019_bitcoinConsumption[0]*parseFloat(upbound))) ||
   (d.Consumption_TWh>(dataElec2019_bitcoinConsumption[0]*parseFloat(lowbound)))
-  ))}}
+  ))}
   ;
 
   const country_list=  Array.from(d3.group(dataElec2019_nearBitcoin, d => d.Country).keys());
@@ -80,7 +63,7 @@ const createPieChart = (dataElec,dataCO2,lowbound,upbound) => {
       //add the legend
       for (let i = 0; i < Energy_Source_list.length; i++) {
         svg_legends.append('rect')
-        .attr('x', width/12)
+        .attr('x', width/20)
         .attr('y', 30+i*20)
         .attr('width', 30)
         .attr('height', 10)
@@ -123,13 +106,13 @@ function drawBitcoinPie(){
   .style("stop-color", "transparent")//end in red
   .style("stop-opacity", 0.1);
   lg.append("stop")
-  .attr("offset", "60%")
+  .attr("offset", "66%")
   .style("stop-color", "white")//end in red
   .style("stop-opacity", 0.1);
   lg.append("stop")
-  .attr("offset", "90%")
+  .attr("offset", "80%")
   .style("stop-color", "blue")//start in blue
-  .style("stop-opacity", 0.1);
+  .style("stop-opacity", 0.05);
   lg.append("stop")
   .attr("offset", "100%")
   .style("stop-color", "white")//start in blue
@@ -154,7 +137,7 @@ function drawBitcoinPie(){
   lg1.append("stop")
   .attr("offset", "100%")
   .style("stop-color", "yellow")//start in blue
-  .style("stop-opacity", 0.8);
+  .style("stop-opacity", 1);
 
 //green gass circles with shades
 var shades_radius_Elec=outRadius_Bitcoin_CO2*2.5;
@@ -279,7 +262,7 @@ function drawCountryPie(){
     // countries that are near bitcoin
     for (let j = 0; j < country_list.length; j++) {
      
-    const xPosition=(Math.random()* (0.8 - 0.2) + 0)*windowWidth;
+    const xPosition=(Math.random()* (0.7 - 0.1) + 0)*windowWidth;
     const yPosition=(Math.random()* (0.8 - 0.2) + 0.2)*windowHeight;
       
     if (country_list[j]!="bitcoin"){
@@ -309,13 +292,13 @@ function drawCountryPie(){
     .attr("fx", "50%")
     .attr("fy", "50%")//since its a vertical linear gradient ;
     lg.append("stop")
-    .attr("offset", "60%")
+    .attr("offset", "66%")
     .style("stop-color", "white")//end in red
     .style("stop-opacity", 0.1);
     lg.append("stop")
-    .attr("offset", "90%")
+    .attr("offset", "80%")
     .style("stop-color", "blue")//start in blue
-    .style("stop-opacity", 0.1);
+    .style("stop-opacity", 0.05);
     lg.append("stop")
     .attr("offset", "100%")
     .style("stop-color", "white")//start in blue

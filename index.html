@@ -8,69 +8,170 @@
   <!-- Load bp5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
+<style>
+  div.singlechoice{
+    position:absolute;
+    top: 450px; /*[wherever you want it]*/
+    left: 450px; /*[wherever you want it]*/
+  }
+  div.mappos1{
+    position:absolute;
+    top: 350px; /*[wherever you want it]*/
+    left: 50px; /*[wherever you want it]*/
+  }
 
+  div.mappos2{
+    position:absolute;
+    top: 550px; /*[wherever you want it]*/
+    left: -400px; /*[wherever you want it]*/
+  }
+  div.row1{
+    position:absolute;
+    top: 550px; /*[wherever you want it]*/
+    left: 950px; /*[wherever you want it]*/
+  }
+  div.piehead{
+    position:absolute;
+    top: 1250px; /*[wherever you want it]*/
+    left: 0px; /*[wherever you want it]*/
+  }
+  div.form-group{
+    position:absolute;
+    top: 1300px; /*[wherever you want it]*/
+    left: 150px; /*[wherever you want it]*/
+  }
+  div.piepos{
+    position:absolute;
+    top: 1350px; /*[wherever you want it]*/
+    left: 50px; /*[wherever you want it]*/
+  }
+
+  div.row{
+    position:absolute;
+    top: 2200px; /*[wherever you want it]*/
+    left: 0px; /*[wherever you want it]*/
+  }
+
+  div.note{
+    position:absolute;
+    top: 2100px; /*[wherever you want it]*/
+    left: 50px; /*[wherever you want it]*/
+  }
+</style>
   <body>
+    
+    <div class="singlechoice">
+            <label class="radio-inline">
+                <input type="radio" name="optionsRadiosinline" id="optionsRadios2"  value=2019 checked="true"> 2019
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value=2018 > 2018
+          </label>
+          <label class="radio-inline">
+              <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value=2017> 2017
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optionsRadiosinline" id="optionsRadios5" value=2016 > 2016
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="optionsRadiosinline" id="optionsRadios6"  value=2015> 2015
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optionsRadiosinline" id="optionsRadios1" value=2014 > 2014
+        </label>
+    </div>
+
+
     <div class="container-fluid p-5 bg-primary text-white text-center">
       <h1>Bitcoin & Society</h1>
       <p>Is Bitcoin Environmentally Friendly? </p>
     </div>
 
-    <div class="row container-fluid p-5">
+    
+    <div class="row1" style="width: 400px; ;height: 750px ;">
+      <div class="col container p-4 bg-primary  text-white">
+      <h2>How to read?</h4>
+      </br>
+      <p class="h4">The world map enables the users to switch between the country-level greenhouse gas emissions and the electricity consumption’s views. 
+      </br>
+    </br>
+        The darker the colors, the higher the values are. 
+      </br>
+    </br>
+        Mouseover a country, details will show out.
+      </br>
+    </br>
+        The red color country represents the same level CO2 emission as the Bitcoin.
 
-    <div class="col-sm-6" id="map-box">
-      <!-- Map Title -->
-      <div class="text-center text-black"><p>Global Greenhouse Gas Emissions in 2020</p></div>
 
-      <!-- Create an element where the map will take place -->
 
-      <div id="map" class="border">  
-        <svg id="map-svg" class="col-xxl-12"></svg>
+</br>
+</br>
+</br>
+
+        </p>
+        </div>
+    </div>
+
+
+    <div  id="map-box" style="width: 900px; ;height: 800px ;">
+      <div style="width: 1400px; ;height: 100px ;" class="mappos1" ><h3 class="text-center">Global Greenhouse Gas Emissions (MtCO2e)</h3></div>
+      <div id="map" class="mappos2" >  
+        <svg id="map-svg"   ></svg>
         <script src="https://d3js.org/d3.v6.js"></script>
         <script src="http://d3js.org/topojson.v1.min.js"></script>
         <script src="js/map.js"></script>
       </div>
-    </div>
+      </div>
+  
      
 
-    <div class="col-sm-6" id="piechart-box">
-      <!-- Piechart Title -->
-      <div class="text-center text-black"><p>Electricity Consumption in 2020 of Countries that are +/- 50% of Bitcoin's</p></div>
-      <!-- Create an element where the piechart will take place -->
 
-      <div id="piechart" class="border">
-        <svg id="piechart-svg" class="col-xxl-12"></svg>
-        <script src="https://d3js.org/d3.v7.min.js"></script>
-        <script src="http://d3js.org/topojson.v1.min.js"></script>
-        <script src="js/piechart.js"></script>
-      </div>
+    <div id="piechart-box" class="piehead"  style="width: 1400px; ;height: 100px ;">
+      <div class="text-center"><h3>Electricity Consumptions & Greenhouse Gas Emissions in 2019*</h3></div>
     </div>
 
-  </div>
+    <div class="form-group"  >
+      <font size="-2">Show countries whose total electricity consumptions are > </font>
+      <input type="number" value="15" id="msg_lowbound" style="width: 80px; height: 30px;">
+      <font size="-2"> times </font>
+      <font size="-2"> < </font>
+      <input type="number" value="0.2" id="msg_upbound" style="width: 80px; height: 30px;">
+      <font size="-2"> times of Bitcoin's. </font>
+      <button id="go-button">Confirm</button>
+    </div>
 
-      <div class="row">
+
+    <div id="piechart"  class="piepos"  style="width: 1200px; ;height: 800px ;">
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <script src="http://d3js.org/topojson.v1.min.js"></script>
+      <script src="js/piechart.js"></script>
+    </div>
+
+    <div class="note">
+      <font size="-2">Both Electricity Consumptions and Greenhouse Gas Emissions data is logged value</font>
+      </div>
+    
+
+    <div class="row">
       <div class="col container-fluid p-5 bg-primary  text-white">
-        <h2>How to read our visualization?</h2>
-        <p>The world map enables the users to switch between the country-level total greenhouse gas emissions and the electricity consumption’s views. 
-          The darker the colors, the higher the values are. 
-          By clicking on each country, the area will be addressed. 
-          Later, more interaction design will be added. 
-          By then, clicking a country, its pie chart will show out.
-          For now, the bubble chart is a separate part to read. 
-          It reflects a more granular view of the year 2020’s energy consumption sources. 
+        <h2>How to read the bubble chart?</h2>
+        <p>The bubble chart reflects a more granular view of the year 2019's energy consumption sources. 
           Each pie chart is a country, or Bitcoin. 
           The proportion shows how much the energy consumption comes from nuclear, fossil, or renewable sources. 
           Note that not every country has access to nuclear resources. 
-          And Bitcoin surprisingly consumes very few traditional fossil sources. 
-          By dragging the Bitcoin’s pie chart, and overlapping other countries on top of it, you will find the bubbles auto-ligned. 
+          And surprisingly, Bitcoin consumes very few traditional fossil sources. 
+          By dragging one pie chart, and overlapping with another, you will find the bubbles auto-ligned. 
           And the proportion differences are clear to see, since the color is set with opacity. 
+          The outer circle surrounding the pie chart, is the greenhouse gas emissions. It shows the relative rate of greenhouse gas emission and its energy consumption by source of a country. Two same volume energy consumption countries can have different CO2 emission amount, and the reason lies in the proportion of the pie chart energy sources.
           </p>
       </div>
     </div>
+      
 
     <div class="row">
-  
-      <div class="col container-fluid p-5 bg-info text-black">
 
+      <div class="col container-fluid p-5 bg-info text-black">
         <h2>Why should we care about it?</h2>
         <p>More than a decade on, it’s undeniable that Bitcoin has gone mainstream, however, the digital gold rush has come with a catch: massive electricity consumption.
           It is Bitcoin's proof of work consensus mechanism that makes it so energy-intensive. 
@@ -79,11 +180,9 @@
           How does Bitcoin compare with other countries globally? 
           In our visualization, we will answer all above questions. 
         </p>
-
       </div>
 
       <div class="col container-fluid p-5 bg-info text-black">
-
         <h2>What does our visualization show?</h2>
         <p>Our data has two categories, the greenhouse gas emissions and the electricity consumption of both the country-level and Bitcoin. 
           Moreover, we divide the electricity consumption by source, like nuclear, fossil, and renewable sources, to show a finer granularity of the data. 
@@ -92,43 +191,8 @@
           Second is a bubble chart, which is composed of different pie charts, and it is used mainly to compare the electricity consumption source proportions. 
           </p>
       </div>
-
     </div>
 
-    <div class="row">
-
-      <div class="col container-fluid p-5 bg-success text-white">
-
-
-        <h2>What is expected in the final visualization submission?</h2>
-        <p>We will add a time axis later. Also, a linkage between the world map, and bubble charts will be an interesting interactive part to implement in the future. Moreover, the pie chart will be updated with an orbit around it, to combine the greenhouse gas emission data with electricity consumption data, and give a new view that under the same electricity consumption the greenhouse gas emission can vary a lot. By then, the question of ‘is Bitcoin environmentally friendly’ will have a better answer. </p>
-
-      </div>
-
-    </div>
-    <script>
-      // alert("This is only a simple demo. \nAnd there is no time to perfect it before the RL exam.  :( \nNow this project is not that good, so please give us some criticisms and suggestions to help us improve it.\nThank you very much!\n\nHope everyone can get good grades.\nMay the PASS force be with you!  : )")
-    //We will build a basic function to handle window resizing.
-      function resize() {
-          map_width = document.getElementById('map-box').clientWidth;
-          map_height = map_width * 0.75;
-          d3.select('#map-svg')
-            .attr('width', map_width)
-            .attr('height', map_height);
-
-          piechart_width = document.getElementById('piechart-box').clientWidth;
-          piechart_height = piechart_width * 0.75;
-          d3.select('#piechart-svg')
-            .attr('width', piechart_width)
-            .attr('height', piechart_height);
-
-
-        
-      }
-
-      window.onresize = resize;
-//Call our resize function if the window size is changed.
-    </script>
 
 
 </body>
